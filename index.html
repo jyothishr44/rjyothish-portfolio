@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>R Jyothish Portfolio</title>
+  <style>
+    /* Basic Reset */
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { background: #111; color: #eee; font-family: sans-serif; line-height: 1.6; display: flex; flex-direction: column; min-height: 100vh; }
+
+    header { display: flex; justify-content: space-between; padding: 2rem 3rem; align-items: center; }
+    header h1 { color: #1e3a8a; font-size: 1.8rem; }
+
+    nav ul { display: flex; gap: 4rem; list-style: none; }
+    nav a { color: #eee; text-decoration: none; font-size: 1rem; position: relative; }
+    nav a:hover { color: #60a5fa; }
+    nav a::before { content: "✓"; color: #34d399; position: absolute; top: -1.2rem; left: 50%; transform: translateX(-50%); }
+
+    section { padding: 4rem 3rem; text-align: center; }
+    #about p { max-width: 600px; margin: 0.8rem auto; }
+
+    .btn { display: inline-block; margin: 1rem 0.5rem; padding: 0.8rem 1.5rem; border-radius: 0.4rem; color: #fff; text-decoration: none; }
+    .btn-email { background: #2563eb; }
+    .btn-linkedin { background: #16a34a; }
+    .btn-github { background: #6b21a8; }
+
+    .projects { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 2rem; max-width: 1000px; margin: 0 auto; }
+    .proj-card { background: #1f2937; padding: 1.5rem; border-radius: 0.6rem; transition: transform 0.3s, border 0.3s; }
+    .proj-card:hover { transform: scale(1.03); border: 3px solid #2563eb; }
+    .proj-card h3 { color: #1e3a8a; margin-bottom: 0.5rem; }
+
+    .skills-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 2rem; max-width: 900px; margin: 0 auto; }
+    .skill-col h4 { color: #1e3a8a; margin-bottom: 0.5rem; }
+
+    footer { margin-top: auto; border-top: 3px solid #1e3a8a; padding: 2rem; text-align: center; color: #999; font-size: 0.9rem; }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>R Jyothish</h1>
+    <nav>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="https://github.com/jyothishr44?tab=repositories" target="_blank">GitHub</a></li>
+        <li><a href="https://linkedin.com" target="_blank">LinkedIn</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="about">
+    <p style="font-size: 1.6rem; color: #1e3a8a; font-weight: bold;">Hello, I’m R Jyothish</p>
+    <p>Motivated Computer Science student with hands-on experience in full‑stack web development.</p>
+    <p>Passionate about solving real-world problems and constantly learning new tools & technologies.</p>
+
+    <div>
+      <a href="mailto:jyothishjyo645@gmail.com" class="btn btn-email">Email Me</a>
+      <a href="https://www.linkedin.com/in/jyothish-r-702785344/" class="btn btn-linkedin">LinkedIn</a>
+      <a href="https://github.com/jyothishr44?tab=repositories" class="btn btn-github">GitHub</a>
+    </div>
+  </section>
+
+  <section id="projects">
+    <h2 style="color: #1e3a8a; font-size: 2rem; margin-bottom: 2rem;">Projects</h2>
+    <div class="projects">
+      <div class="proj-card">
+        <h3>Greeting Application</h3>
+        <p>JAVA | SpringBoot | MySQL | REST APIs | Postman</p>
+        <p>Built a Spring Boot app serving time-based personalized
+        messages via REST APIs, using clean architecture and
+        modular code. </p>
+      </div>
+      <div class="proj-card">
+        <h3>Employee Management System</h3>
+        <p>JAVA | SpringBoot | Spring Data Jpa | MySQL | HTML/CSS | ReactJS</p>
+        <p>Developed a Spring Boot and MySQL-based web application
+          enabling efficient employee data management with RESTful
+          APIs, secure CRUD operations, and role-based access control.</p>
+      </div>
+      <div class="proj-card">
+        <h3>E-Commerce Web Application</h3>
+        <p>SpringBoot | Spring Data/Hibernate | MySQL | HTML/CSS | JavaScript |ReactJS</p>
+        <p>Developed an E-Commerce Web Application with a frontend
+            using HTML, CSS, and JavaScript and backend services built
+            in Java and Spring Boot. Implemented features for adding,
+            deleting, and updating products, enabling complete CRUD
+            operations for product management. Designed a shopping
+            cart system allowing users to add items and view totals
+            dynamically. Integrated search functionality for products,
+            improving user navigation and experience. </p>
+      </div>
+   
+ </div>
+  </section>
+
+  <section id="skills">
+    <h2 style="color: #1e3a8a; font-size: 2rem; margin-bottom: 2rem;">Skills</h2>
+    <div class="skills-grid">
+      <div class="skill-col">
+        <h4>Frontend</h4>
+        <p>HTML5, CSS, JavaScript</p>
+        <p>Tailwind CSS, ReactJS</p>
+      </div>
+      <div class="skill-col">
+        <h4>Backend</h4>
+        <p>Java, JEE, Spring Boot, Spring Data Jpa, Spring MVC</p>
+        <p>REST APIs, Hibernate ORM</p>
+      </div>
+      <div class="skill-col">
+        <h4>Databases & Tools</h4>
+        <p>MySQL, Postgresql, JDBC</p>
+        <p>Git, GitHub, Intellij, Eclipse, VS Code, Postman, Maven</p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    © 2025 R Jyothish. Designed with 💙
+  </footer>
+
+</body>
+</html>
